@@ -16,6 +16,8 @@ class Search extends StatelessWidget {
         body: (currentPosition != null)
             ? Consumer<List<Place>>(
                 builder: (_, places, __) {
+                  print(currentPosition.latitude);
+                  print(currentPosition.longitude);
                   return Column(
                     children: <Widget>[
                       Container(
